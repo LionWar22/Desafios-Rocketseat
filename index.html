@@ -56,12 +56,35 @@
 				return (anos >= 7 ? 'Jedi Master' : anos >= 3 ? 'Avançado' : anos >= 1 ? 'Intermediario' : 'Iniciante');
 			}
 
-			var anosEstudo = 1;
+			var anosEstudo = 1; 
 			console.log(experiencia(anosEstudo));
 
+			//Desafio 05
+
+			function skillsUsers(usuarios){
+
+				for(var item of usuarios) {
+					console.log(' O ' +item.nome+ ' possui as habilidades: ' +item.habilidades.join(','));
+				}
+		
+			}
+
+			var usuarios = [
+				{
+					nome: 'Cezar',
+					habilidades: ["Python","MySQL","HTML5","CSS","C","Arduino"]
+				},
+				{
+					nome: "Gabriel",
+					habilidades: ["C","Java","R","BI","Javascript"]
+				}
+			];
 
 
 
+
+			skillsUsers(usuarios)
+		
 		</script>
 
 	</body>
